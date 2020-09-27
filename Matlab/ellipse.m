@@ -1,0 +1,6 @@
+function ellipse (x,y,a, b, rgb, varargin)
+% dessine un cercle de couleur rgb=[r, g, b]
+rectangle('position',[x-a, y-b, 2*a, 2*b], ...
+    'FaceColor', [1 1 1], 'EdgeColor', rgb, ...
+    'curvature',[1 1],varargin{:});
+end
